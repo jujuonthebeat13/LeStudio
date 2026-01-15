@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 const {
   Client,
   GatewayIntentBits,
@@ -229,4 +229,5 @@ function formatDate(input) {
 }
 
 // ========= LOGIN =========
+
 client.login(process.env.DISCORD_TOKEN);

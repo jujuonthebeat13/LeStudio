@@ -129,7 +129,7 @@ client.on(Events.InteractionCreate, async interaction => {
       row("name", "Event name", TextInputStyle.Short),
       row("description", "Description", TextInputStyle.Paragraph),
       row("date", "Date (dd/mm/yyyy)", TextInputStyle.Short),
-      row("time", "Time (24h)", TextInputStyle.Short),
+      row("time", "Time (e.g. 18:00)", TextInputStyle.Short),
       row("location", "Location", TextInputStyle.Short)
     );
 
@@ -231,3 +231,4 @@ function formatDate(input) {
 // ========= LOGIN =========
 
 client.login(process.env.DISCORD_TOKEN);
+
